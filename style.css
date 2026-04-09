@@ -1,0 +1,355 @@
+/* ==========================================================================
+   Variables y Temas (Basado en style-guide.md)
+   ========================================================================== */
+:root {
+  /* Tipografía */
+  --font-family: 'League Spartan', sans-serif;
+  --font-size-numbers: 32px;
+
+  /* --- TEMA 1 (Por defecto) --- */
+  /* Backgrounds */
+  --bg-main-1: hsl(222, 26%, 31%);
+  --bg-toggle-1: hsl(223, 31%, 20%);
+  --bg-screen-1: hsl(224, 36%, 15%);
+  /* Keys */
+  --key-bg-del-res-1: hsl(225, 21%, 49%);
+  --key-shadow-del-res-1: hsl(224, 28%, 35%);
+  --key-bg-equal-1: hsl(6, 63%, 50%);
+  --key-shadow-equal-1: hsl(6, 70%, 34%);
+  --key-bg-num-1: hsl(0, 0%, 90%);
+  --key-shadow-num-1: hsl(28, 16%, 65%);
+  /* Text */
+  --text-main-1: hsl(0, 100%, 100%); /* Blanco para logo, header y screen */
+  --text-keys-num-1: hsl(221, 14%, 31%); /* Azul oscuro para números */
+  --text-keys-del-res-1: hsl(0, 100%, 100%);
+  --text-keys-equal-1: hsl(0, 100%, 100%);
+
+  /* --- TEMA 2 --- */
+  /* Backgrounds */
+  --bg-main-2: hsl(0, 0%, 90%);
+  --bg-toggle-2: hsl(0, 5%, 81%);
+  --bg-screen-2: hsl(0, 0%, 93%);
+  /* Keys */
+  --key-bg-del-res-2: hsl(185, 42%, 37%);
+  --key-shadow-del-res-2: hsl(185, 58%, 25%);
+  --key-bg-equal-2: hsl(25, 98%, 40%);
+  --key-shadow-equal-2: hsl(25, 99%, 27%);
+  --key-bg-num-2: hsl(0, 0%, 90%);
+  --key-shadow-num-2: hsl(35, 11%, 61%);
+  /* Text */
+  --text-main-2: hsl(60, 10%, 19%); /* Gris oscuro para logo, header y screen */
+  --text-keys-num-2: hsl(60, 10%, 19%);
+  --text-keys-del-res-2: hsl(0, 100%, 100%);
+  --text-keys-equal-2: hsl(0, 100%, 100%);
+
+  /* --- TEMA 3 --- */
+  /* Backgrounds */
+  --bg-main-3: hsl(268, 75%, 9%);
+  --bg-toggle-3: hsl(268, 71%, 12%);
+  --bg-screen-3: hsl(268, 71%, 12%);
+  /* Keys */
+  --key-bg-del-res-3: hsl(281, 89%, 26%);
+  --key-shadow-del-res-3: hsl(285, 91%, 52%);
+  --key-bg-equal-3: hsl(176, 100%, 44%);
+  --key-shadow-equal-3: hsl(177, 92%, 70%);
+  --key-bg-num-3: hsl(268, 47%, 21%);
+  --key-shadow-num-3: hsl(290, 70%, 36%);
+  /* Text */
+  --text-main-3: hsl(52, 100%, 62%); /* Amarillo para logo, header y screen */
+  --text-keys-num-3: hsl(52, 100%, 62%);
+  --text-keys-del-res-3: hsl(0, 100%, 100%);
+  --text-keys-equal-3: hsl(198, 20%, 13%); /* Azul oscuro para el igual */
+}
+
+/* Aplicación de variables según el atributo data-theme en el body */
+body[data-theme="1"] {
+  --bg-main: var(--bg-main-1);
+  --bg-toggle: var(--bg-toggle-1);
+  --bg-screen: var(--bg-screen-1);
+  --key-bg-del-res: var(--key-bg-del-res-1);
+  --key-shadow-del-res: var(--key-shadow-del-res-1);
+  --key-bg-equal: var(--key-bg-equal-1);
+  --key-shadow-equal: var(--key-shadow-equal-1);
+  --key-bg-num: var(--key-bg-num-1);
+  --key-shadow-num: var(--key-shadow-num-1);
+  --text-main: var(--text-main-1);
+  --text-keys-num: var(--text-keys-num-1);
+  --text-keys-del-res: var(--text-keys-del-res-1);
+  --text-keys-equal: var(--text-keys-equal-1);
+}
+
+body[data-theme="2"] {
+  --bg-main: var(--bg-main-2);
+  --bg-toggle: var(--bg-toggle-2);
+  --bg-screen: var(--bg-screen-2);
+  --key-bg-del-res: var(--key-bg-del-res-2);
+  --key-shadow-del-res: var(--key-shadow-del-res-2);
+  --key-bg-equal: var(--key-bg-equal-2);
+  --key-shadow-equal: var(--key-shadow-equal-2);
+  --key-bg-num: var(--key-bg-num-2);
+  --key-shadow-num: var(--key-shadow-num-2);
+  --text-main: var(--text-main-2);
+  --text-keys-num: var(--text-keys-num-2);
+  --text-keys-del-res: var(--text-keys-del-res-2);
+  --text-keys-equal: var(--text-keys-equal-2);
+}
+
+body[data-theme="3"] {
+  --bg-main: var(--bg-main-3);
+  --bg-toggle: var(--bg-toggle-3);
+  --bg-screen: var(--bg-screen-3);
+  --key-bg-del-res: var(--key-bg-del-res-3);
+  --key-shadow-del-res: var(--key-shadow-del-res-3);
+  --key-bg-equal: var(--key-bg-equal-3);
+  --key-shadow-equal: var(--key-shadow-equal-3);
+  --key-bg-num: var(--key-bg-num-3);
+  --key-shadow-num: var(--key-shadow-num-3);
+  --text-main: var(--text-main-3);
+  --text-keys-num: var(--text-keys-num-3);
+  --text-keys-del-res: var(--text-keys-del-res-3);
+  --text-keys-equal: var(--text-keys-equal-3);
+}
+
+/* ==========================================================================
+   Reset y Estilos Base
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ==========================================================================
+   Layout Principal de la Calculadora
+   ========================================================================== */
+.calculator {
+  width: 100%;
+  max-width: 540px; /* Tamaño máximo para escritorio */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* --- Header y Selector de Temas --- */
+.calculator__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calculator__logo {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.theme-switcher__label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.theme-switcher__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.theme-switcher__numbers {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8px;
+}
+
+.theme-switcher__numbers button {
+  background: transparent;
+  color: var(--text-main);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-switcher__track {
+  width: 72px;
+  height: 26px;
+  background-color: var(--bg-toggle);
+  border-radius: 13px;
+  position: relative;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.theme-switcher__thumb {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: var(--key-bg-equal);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Posiciones del switch según el tema */
+body[data-theme="1"] .theme-switcher__thumb { transform: translateX(0); }
+body[data-theme="2"] .theme-switcher__thumb { transform: translateX(23px); }
+body[data-theme="3"] .theme-switcher__thumb { transform: translateX(46px); }
+
+/* --- Pantalla --- */
+.calculator__screen {
+  background-color: var(--bg-screen);
+  border-radius: 10px;
+  padding: 24px 32px;
+  text-align: right;
+}
+
+.calculator__display {
+  font-size: 40px; /* Tamaño base para móvil */
+  font-weight: 700;
+  color: var(--text-main);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+  .calculator__display {
+    font-size: 56px; /* Tamaño más grande para escritorio */
+  }
+}
+
+/* --- Teclado --- */
+.calculator__keys {
+  background-color: var(--bg-toggle);
+  border-radius: 10px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .calculator__keys {
+    padding: 32px;
+    gap: 24px;
+  }
+}
+
+/* Estilo base de las teclas */
+.key {
+  background-color: var(--key-bg-num);
+  color: var(--text-keys-num);
+  font-size: var(--font-size-numbers);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 0 8px;
+  box-shadow: 0 4px 0 var(--key-shadow-num);
+  transition: filter 0.2s ease, transform 0.1s ease;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .key {
+    font-size: 40px;
+    padding: 16px 0 12px;
+  }
+}
+
+/* Efectos Hover/Active (Active states según style-guide) */
+.key:hover {
+  filter: brightness(1.2);
+}
+.key:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--key-shadow-num);
+}
+
+/* Teclas DEL y RESET */
+.key--del, .key--reset {
+  background-color: var(--key-bg-del-res);
+  color: var(--text-keys-del-res);
+  box-shadow: 0 4px 0 var(--key-shadow-del-res);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .key--del, .key--reset {
+    font-size: 28px;
+  }
+}
+.key--del:active, .key--reset:active {
+  box-shadow: 0 2px 0 var(--key-shadow-del-res);
+}
+
+/* Tecla IGUAL (=) */
+.key--equal {
+  background-color: var(--key-bg-equal);
+  color: var(--text-keys-equal);
+  box-shadow: 0 4px 0 var(--key-shadow-equal);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .key--equal {
+    font-size: 28px;
+  }
+}
+.key--equal:active {
+  box-shadow: 0 2px 0 var(--key-shadow-equal);
+}
+
+/* Alineaciones específicas en el Grid */
+/* Row 4: . 0 / x */
+.calculator__keys > :nth-child(13) { grid-column: 1; }
+.calculator__keys > :nth-child(14) { grid-column: 2; }
+.calculator__keys > :nth-child(15) { grid-column: 3; }
+.calculator__keys > :nth-child(16) { grid-column: 4; }
+
+/* Row 5: RESET ocupa 2 columnas, = ocupa 2 columnas */
+.key--reset {
+  grid-column: 1 / 3;
+}
+.key--equal {
+  grid-column: 3 / 5;
+}
+
+/* ==========================================================================
+   Footer Attribution (Frontend Mentor)
+   ========================================================================== */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-main);
+}
+.attribution a {
+  color: var(--key-bg-equal);
+  text-decoration: none;
+  font-weight: bold;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}

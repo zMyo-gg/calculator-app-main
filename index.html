@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  
+</head>
+<body>
+    <body data-theme="1">
+    <main class="calculator">
+      <header class="calculator__header">
+        <h1 class="calculator__logo">Calculadora</h1>
+
+        <div class="theme-switcher">
+          <span class="theme-switcher__label">THEME</span>
+
+          <div class="theme-switcher__group">
+            <div class="theme-switcher__numbers">
+              <button type="button" data-theme="1">1</button>
+              <button type="button" data-theme="2">2</button>
+              <button type="button" data-theme="3">3</button>
+            </div>
+
+            <div class="theme-switcher__track" aria-label="Select theme">
+              <span
+                class="theme-switcher__thumb theme-switcher__thumb--active"
+                data-theme="1"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="calculator__screen" aria-live="polite">
+        <div id="display" class="calculator__display">0</div>
+      </section>
+
+      <section class="calculator__keys" aria-label="Calculator keys">
+        <!-- Row 1 -->
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key key--action key--del" data-action="delete">DEL</button>
+
+        <!-- Row 2 -->
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key key--operator" data-operator="+">+</button>
+
+        <!-- Row 3 -->
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key key--operator" data-operator="-">-</button>
+
+        <!-- Row 4 -->
+        <button class="key" data-value=".">.</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key key--operator" data-operator="/">/</button>
+        <button class="key key--operator" data-operator="*">x</button>
+
+        <!-- Row 5 -->
+        <button class="key key--action key--reset" data-action="reset">
+          RESET
+        </button>
+        <button class="key key--action key--equal" data-action="equal">
+          =
+        </button>
+      </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/myo_gg/">zMyo</a>.
+  </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
